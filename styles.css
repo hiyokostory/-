@@ -355,6 +355,10 @@ h1 {
   object-fit: cover;
 }
 
+.case-study img.scene-focus {
+  object-position: center 58%;
+}
+
 .case-copy {
   padding: 26px;
 }
