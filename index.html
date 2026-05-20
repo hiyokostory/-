@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>최고웅 | 멀티미디어 콘텐츠 제작자</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=lightbox-pdf" />
   </head>
   <body>
     <header class="site-header" aria-label="주요 이동">
@@ -112,6 +112,9 @@
                 <span>표지</span>
                 <span>삽화</span>
                 <span>PDF</span>
+              </div>
+              <div class="case-actions">
+                <a href="./assets/moonlight-book.pdf" target="_blank" rel="noopener">PDF 보기</a>
               </div>
             </div>
           </article>
@@ -331,6 +334,15 @@
       </section>
     </main>
 
-    <script src="./script.js"></script>
+    <div class="lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="이미지 크게 보기" hidden>
+      <button class="lightbox-backdrop" type="button" aria-label="확대 이미지 닫기"></button>
+      <figure class="lightbox-panel">
+        <img class="lightbox-image" alt="" />
+        <figcaption class="lightbox-caption"></figcaption>
+      </figure>
+      <button class="lightbox-close" type="button" aria-label="확대 이미지 닫기">닫기</button>
+    </div>
+
+    <script src="./script.js?v=lightbox-pdf"></script>
   </body>
 </html>
